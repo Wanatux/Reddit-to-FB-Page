@@ -14,10 +14,17 @@ I am not sure why Im using a XLSX file to keep track of the historic posts in or
 I am not using any third party API, I am using directly an app from reddit and FB.
 
 ## Config needed before start.
+### Select your preffered Sub Reddits
 
-Just update the information for the creds for FB API and Redddit Praw.
-If you do now know how to get the requiered information please visit the following sites:
+Update the following code:
 
+```
+#SubReddit List
+reddit_list = ['nextfuckinglevel', 'instantkarma','ActualPublicFreakouts','Whatcouldgowrong','IdiotsInCars','Cringetopia','WinStupidPrizes', 'trashy','PublicFreakout', 'aww', 'Wellthatsucks', 'KidsAreFuckingStupid', 'therewasanattempt', 'instant_regret']
+```
+
+### Reddit Creds
+If you do now know how to get the requiered information please visit the following site:
 https://www.reddit.com/prefs/apps
 
 Update the following block.
@@ -30,7 +37,11 @@ r = praw.Reddit(
     username= "Enter Info Here",
     password= "Enter Info Here",
 )
+
 ```
+
+### FB Creds
+If you do now know how to get the requiered information please visit the following site:
 https://developers.facebook.com/apps
 
 Update the following block.
