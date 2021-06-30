@@ -1,5 +1,5 @@
 # Reddit to FB Page and IG
- Python Script to scrape from Reddit Hot videos from specific subreddits and post them automatically to a FB Page and IG.
+ Python Script to scrape from Reddit Hot videos and Hot Pics from specific subreddits and post them automatically to a FB Page and IG.
 
 Videos with audio from reddit to FB and IG, I am not downloading the videos locally, I am getting the download link from reddit.tube and thats the value you can use to upload the content to a FB Page.
 
