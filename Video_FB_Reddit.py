@@ -20,7 +20,7 @@ r = praw.Reddit(
 )
 
 #SubReddit List
-reddit_list = ['nextfuckinglevel', 'instantkarma','ActualPublicFreakouts','Whatcouldgowrong','IdiotsInCars','Cringetopia','WinStupidPrizes', 'trashy','PublicFreakout', 'aww', 'Wellthatsucks', 'KidsAreFuckingStupid', 'therewasanattempt', 'instant_regret']
+reddit_list = config.subreddit_list
 # reddit.read_only = True
 
 #Praw Scrape
@@ -29,7 +29,7 @@ Reddit_Scrapper = True
 
 while Reddit_Scrapper:
     sub = r.subreddit(random.choice(reddit_list))
-    posts = sub.hot(limit=10)    
+    posts = sub.hot(limit=20)    
     for p in posts:
         try:
             url = p.secure_media['reddit_video']['fallback_url']
@@ -45,9 +45,14 @@ while Reddit_Scrapper:
     df = pd.read_excel(r'subrreddit_history.xlsx')
 
     checker = True
-    while checker:    
+    while checker:
+        if len(vids) == 0:
+            checker = False
+            break
         if vids[0][2] in df.values:
-            list.remove(0)
+            vids.pop(0)
+            if len(vids) == 0:
+                checker = False
         else:
             checker = False 
     if len(vids) > 1:
@@ -82,21 +87,73 @@ for link in links:
     downloadlink = link.get_attribute("href")
 driver.quit()
 
-#FB Credits and create Video Post
+writer.close()
+
+#Creation of the description and Tags
+def fb_descript():
+    tags = []
+    s = ' '
+    for x in vids[0][0].split():
+        tags.append('#' + x)
+
+    s = s.join(tags)
+
+    return ''' {a} 
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}
+    {c}    
+    {b}'''.format(a=vids[0][0], b=s, c='.' *5)
+#FB Credits and Photo Post
+
+def postInstagramVideo():
+#Post the Image
+    video_location_1 = downloadlink
+    post_url = 'https://graph.facebook.com/v10.0/{}/media'.format(config.inst_id)
+    payload = {
+        'media_type': 'VIDEO',
+        'video_url': video_location_1,
+        'caption': fb_descript(),
+        'access_token': config.inst_acc_token,
+        }
+    r = requests.post(post_url, data=payload)
+    print(r.text)
     
-page_id_1 = 'Enter INT VALUE Here'
-facebook_access_token_1 = 'Enter Info Here'
-    
-video_url = 'https://graph-video.facebook.com/v11.0/{}/videos'.format(page_id_1)
-video_location = downloadlink
-video_payload = {
-'file_url': video_location,
-'title': vids[0][0],
-'description': vids[0][0],        
-'access_token': facebook_access_token_1,
+    result = json.loads(r.text)
+    #After the response you need to wait some secs for the second request.
+    time.sleep(15)
+    if 'id' in result:
+        creation_id = result['id']
+        second_url = 'https://graph.facebook.com/v10.0/{}/media_publish'.format(config.inst_id)
+        second_payload = {
+        'creation_id': creation_id,
+        'access_token': config.inst_acc_token,
+        }
+        r = requests.post(second_url, data=second_payload)
+        print('--------Just posted to instagram--------')
+        print(r.text)
+    else:
+        pass
+postInstagramVideo()
 
-}
+def postFacebookVideo():
+    video_url = 'https://graph-video.facebook.com/v11.0/{}/videos'.format(config.fb_page_id)
+    video_location = downloadlink
+    video_payload = {
+    # 'upload_phase': 'start',
+    'file_url': video_location,
+    'title': vids[0][0],
+    'description': vids[0][0],        
+    'access_token': config.fb_acc_token,
 
-r = requests.post(video_url, data=video_payload)
-
-print(r.text)
+    }
+    r = requests.post(video_url, data=video_payload)
+    print('--------Just posted to Facebook--------')
+    print(r.text)
+postFacebookVideo()    
