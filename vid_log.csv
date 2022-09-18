@@ -1,0 +1,305 @@
+,0
+0,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+1,--------Just posted to Facebook--------
+2,"{""id"":""410757731017062""}"
+3,--------Just posted to instagram--------
+4,--------Just posted to Facebook--------
+5,"{""id"":""654267375878268""}"
+6,--------Just posted to instagram--------
+7,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+8,--------Just posted to Facebook--------
+9,"{""id"":""816017086415298""}"
+10,--------Just posted to instagram--------
+11,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+12,--------Just posted to Facebook--------
+13,"{""id"":""1447059179147919""}"
+14,--------Just posted to instagram--------
+15,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+16,--------Just posted to Facebook--------
+17,"{""id"":""1023760298301587""}"
+18,--------Just posted to instagram--------
+19,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+20,--------Just posted to Facebook--------
+21,"{""id"":""819446049236816""}"
+22,--------Just posted to instagram--------
+23,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+24,--------Just posted to Facebook--------
+25,"{""id"":""917111576344809""}"
+26,--------Just posted to instagram--------
+27,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+28,--------Just posted to Facebook--------
+29,"{""id"":""639801234250789""}"
+30,--------Just posted to instagram--------
+31,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+32,--------Just posted to Facebook--------
+33,"{""id"":""1510841569366979""}"
+34,--------Just posted to instagram--------
+35,"{""error"":{""message"":""The video file you selected is in a format that we don't support."""
+36,--------Just posted to Facebook--------
+37,"{""id"":""1229440097913320""}"
+0,"type:""OAuthException"""
+1,
+2,
+3,
+4,
+5,
+6,
+7,"type:""OAuthException"""
+8,
+9,
+10,
+11,"type:""OAuthException"""
+12,
+13,
+14,
+15,"type:""OAuthException"""
+16,
+17,
+18,
+19,"type:""OAuthException"""
+20,
+21,
+22,
+23,"type:""OAuthException"""
+24,
+25,
+26,
+27,"type:""OAuthException"""
+28,
+29,
+30,
+31,"type:""OAuthException"""
+32,
+33,
+34,
+35,"type:""OAuthException"""
+36,
+37,
+0,code:352
+1,
+2,
+3,
+4,
+5,
+6,
+7,code:352
+8,
+9,
+10,
+11,code:352
+12,
+13,
+14,
+15,code:352
+16,
+17,
+18,
+19,code:352
+20,
+21,
+22,
+23,code:352
+24,
+25,
+26,
+27,code:352
+28,
+29,
+30,
+31,code:352
+32,
+33,
+34,
+35,code:352
+36,
+37,
+0,error_subcode:2207026
+1,
+2,
+3,
+4,
+5,
+6,
+7,error_subcode:2207026
+8,
+9,
+10,
+11,error_subcode:2207026
+12,
+13,
+14,
+15,error_subcode:2207026
+16,
+17,
+18,
+19,error_subcode:2207026
+20,
+21,
+22,
+23,error_subcode:2207026
+24,
+25,
+26,
+27,error_subcode:2207026
+28,
+29,
+30,
+31,error_subcode:2207026
+32,
+33,
+34,
+35,error_subcode:2207026
+36,
+37,
+0,is_transient:false
+1,
+2,
+3,
+4,
+5,
+6,
+7,is_transient:false
+8,
+9,
+10,
+11,is_transient:false
+12,
+13,
+14,
+15,is_transient:false
+16,
+17,
+18,
+19,is_transient:false
+20,
+21,
+22,
+23,is_transient:false
+24,
+25,
+26,
+27,is_transient:false
+28,
+29,
+30,
+31,is_transient:false
+32,
+33,
+34,
+35,is_transient:false
+36,
+37,
+0,"error_user_title:""Unsupported format"""
+1,
+2,
+3,
+4,
+5,
+6,
+7,"error_user_title:""Unsupported format"""
+8,
+9,
+10,
+11,"error_user_title:""Unsupported format"""
+12,
+13,
+14,
+15,"error_user_title:""Unsupported format"""
+16,
+17,
+18,
+19,"error_user_title:""Unsupported format"""
+20,
+21,
+22,
+23,"error_user_title:""Unsupported format"""
+24,
+25,
+26,
+27,"error_user_title:""Unsupported format"""
+28,
+29,
+30,
+31,"error_user_title:""Unsupported format"""
+32,
+33,
+34,
+35,"error_user_title:""Unsupported format"""
+36,
+37,
+0,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+1,
+2,
+3,
+4,
+5,
+6,
+7,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+8,
+9,
+10,
+11,"error_user_msg:""The video format is not supported. Please check spec for supported aspect_ratio format"""
+12,
+13,
+14,
+15,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+16,
+17,
+18,
+19,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+20,
+21,
+22,
+23,"error_user_msg:""The video format is not supported. Please check spec for supported aspect_ratio format"""
+24,
+25,
+26,
+27,"error_user_msg:""The video format is not supported. Please check spec for supported aspect_ratio format"""
+28,
+29,
+30,
+31,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+32,
+33,
+34,
+35,"error_user_msg:""The video format is not supported. Please check spec for supported streams format"""
+36,
+37,
+0,"fbtrace_id:""AN1DLiFs5v5mShEE8ZSGt3h""}}"
+1,
+2,
+3,
+4,
+5,
+6,
+7,"fbtrace_id:""ADfDNH7UKkgRtdcfs16wkWP""}}"
+8,
+9,
+10,
+11,"fbtrace_id:""AmS28VfvsVH0aY74XUzxywR""}}"
+12,
+13,
+14,
+15,"fbtrace_id:""AndeLiPBLZ1QFa6dQ7zXmm8""}}"
+16,
+17,
+18,
+19,"fbtrace_id:""Ae1cp8L7JDR8v6ql09GotEw""}}"
+20,
+21,
+22,
+23,"fbtrace_id:""AZeEfphv9TIb6QnwG0SG5aR""}}"
+24,
+25,
+26,
+27,"fbtrace_id:""A60awBPh1iS8ee887Wl12jS""}}"
+28,
+29,
+30,
+31,"fbtrace_id:""AB4dE9d_az0xjG76vM2UkOD""}}"
+32,
+33,
+34,
+35,"fbtrace_id:""AxS7BQuu2bFvOhaglrLf8hE""}}"
+36,
+37,
