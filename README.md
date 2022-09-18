@@ -9,11 +9,6 @@ IG only accepts specific format of videos and since the script will get a list a
 
 Is not going to post all the videos everytime you run it, some videos have good quality and FB will not let you upload that, probably I will see if I can implement that feature to auto resize videos but at the moment works the way its intended, Zapier also has a small percentage of failed posts from pictures and of course will not let you post videos with audio unless you have a premium membership.
 
-## XLSX File? Why?
-I am not sure why Im using a XLSX file to keep track of the historic posts in order to avoid duplicate posting, maybe I am used to excel and thats why I automatically started to keep track in it CSV file, anyways this is a script I was able to put together in a couple of hours, more updates and improvements will be posted regularly.
-
-## Third Party API?
-I am not using any third party API, I am using directly an app from reddit, FB and IG.
 
 ## Config needed before start.
 ### Select your preffered Sub Reddits
